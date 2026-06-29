@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-navy text-white font-sans;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-full font-semibold transition-all duration-200 hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply btn bg-gold text-navy hover:bg-lime;
+}
+
+.btn-secondary {
+  @apply btn bg-white/20 text-white hover:bg-white/30;
+}
+
+.btn-danger {
+  @apply btn bg-red-500/80 text-white hover:bg-red-600;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+/* Card styles */
+.card {
+  @apply glass p-4 rounded-xl;
+}
+
+/* Animation */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
