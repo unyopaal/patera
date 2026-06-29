@@ -25,7 +25,7 @@ export default function AdminPage() {
       <main className="min-h-screen bg-gradient-to-br from-navy via-navy to-blue-900 flex items-center justify-center px-4">
         <div className="w-full max-w-md">
           <div className="glass p-8 rounded-2xl">
-            <h1 className="text-2xl font-bold mb-6 text-gold">관리자 로그인</h1>
+            <h1 className="text-2xl font-bold mb-6 text-gold">관리자 로��인</h1>
             <form onSubmit={handleLogin} className="space-y-4">
               <input
                 type="password"
